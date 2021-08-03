@@ -7,7 +7,7 @@ Compose HTML and PDF documents using any Python object inclduing strings, lists,
 Install and update using [pip](https://pip.pypa.io/en/stable/quickstart/):
 
 ```bash
-pip install git+https://github.com/asifr/composr.git
+pip install git+https://github.com/asifr/composr.git --upgrade
 ```
 
 ## In a nutshell
