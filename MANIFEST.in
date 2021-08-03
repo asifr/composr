@@ -1,1 +1,2 @@
-include composr/templates/*.html
+include README.md
+recursive-include composr/templates *
