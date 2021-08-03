@@ -20,6 +20,7 @@ setup(
     license="MIT",
     packages=["composr"],
     install_requires=install_requires,
+    include_package_data=True,
     keywords=["documentation"],
     classifiers=[
         "Development Status :: 3 - Alpha",
