@@ -11,7 +11,7 @@ with open("requirements.txt", "r") as f:
     install_requires = f.read().splitlines()
 
 setup(
-    name="Composr",
+    name="composr",
     version=VERSION,
     description="Static report generator",
     author="Asif Rahman",
