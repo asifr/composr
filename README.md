@@ -40,13 +40,20 @@ com.save_html("./documentation.html")
 
 ## API
 
-- Pandas DataFrame to table: `com.add_dataframe(df, caption)`
-- Paginated DataFrames: `com.add_tabulator(df, caption)`
+- Pandas DataFrame to table: `com.add_dataframe(df, caption, max_rows=1000)`
+- Paginated DataFrames: `com.add_tabulator(df, caption, rows_per_page=20, max_rows=1000, height=300)`
 - Matplotlib figure to embedded SVG: `com.add_svg(fig, caption)`
 - Matplotlib figure to embedded PNG: `com.add_png(fig, caption)`
-- Plotly figures embedded in HTML: `com.add_plotly(fig, caption)`
-- Markdown formatted text: `com.add_text(text)`
+- Plotly figures embedded in HTML: `com.add_plotly(fig, caption, width=800, height=600)`
 - Embed markdown files: `com.add_markdown_file(filename)`
-- Markdown formatted docstrings and comments of python objects: `com.add_markdown_docstring(obj)`, `com.add_docstring(obj)`, `com.add_comments(obj)`
+- Markdown-formatted text: `com.add_markdown(text)`
+- Plain text: `com.add_text(text)`
+- Source code: `com.add_sourcecode(obj, lang="python", hidden=False)`
+- Markdown-formatted docstrings: `com.add_markdown_docstring(obj)`
+- Plain docstrings: `com.add_docstring(obj)`
+- Comments: `com.add_comments(obj)`
 - JSON viewer: `com.add_json(dict)`
+- [Details disclosure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details): `com.add_details(text, title)`
+- Tip aside: `com.add_tip_aside(text, title)`
+- Important aside: `com.add_important_aside(text, title)`
 - Add custom css: `com.add_css_file(filename)`, `com.add_custom_css_file(filename)`, `com.add_codehilite_css_file(filename)`
